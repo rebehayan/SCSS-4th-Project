@@ -27,4 +27,7 @@ node_modules
 2. 자신의 이름으로 branch를 생성합니다. `git branch HaSungPil`
 3. 본인 branch에서 과제를 진행합니다.
 4. 과제가 완료되면, 본인 branch에 push합니다.<br> (main Branch에 Push하지 마세요 / 과제 완료전에 push하지 마세요. add , commit까지만 진행하세요.)
-5. `Pull Request` 생성하여 과제 제출을 완료합니다.
+5. `Pull Request` 생성하여 과제 제출합니다.
+6. 본인 브랜치를 `Fork`하여 본인 레파지토리로 복제합니다.
+7. `gitpage`를 생성합니다.
+8. `Pull Request`한 내용을 수정하여 `gitpage`주소를 남겨주세요.
