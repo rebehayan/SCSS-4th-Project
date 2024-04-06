@@ -11,12 +11,18 @@
 1. 이미지 네이밍에 신경써 주세요.
 2. 접근성을 최대한 준수해 주세요.
 3. 표준문법을 준수하세요.
-4. 과제 제출전에 W3C Validator검사후 제출하세요.
+4. 과제 제출전에 `W3C Validator`검사후 제출하세요.
+5. root에 `.gitignore` 파일을 생성하세요. 해당 파일 안에는 다음 코드를 넣어주세요.
+
+```txt
+node_modules
+.vscode
+```
 
 ## 과제 제출방법
 
-1. 현재 Repository를 본인의 PC에 clone합니다.
-2. 자신의 이름으로 branch를 생성합니다. git branch HaSungPil
+1. 현재 `Repository`를 본인의 PC에 `clone`합니다.
+2. 자신의 이름으로 branch를 생성합니다. `git branch HaSungPil`
 3. 본인 branch에서 과제를 진행합니다.
 4. 과제가 완료되면, 본인 branch에 push합니다.<br> (main Branch에 Push하지 마세요 / 과제 완료전에 push하지 마세요. add , commit까지만 진행하세요.)
-5. Pull Request 생성하여 과제 제출을 완료합니다.
+5. `Pull Request` 생성하여 과제 제출을 완료합니다.
