@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+// 클래스명, 색상
+$alramColor: mint $mint, green $green;
+
+.alram {
+  @include background("ico_arrow_right_white.svg", right rem(12) center, $gray1e);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: rem(8);
+  //알람디자인 완성
+
+  &__color {
+    // 뱃지 디자인
+    @each $class, $color in $alramColor {
+      &.#{$class} {
+        background-color: $color;
+      }
+    }
+  }
+}
