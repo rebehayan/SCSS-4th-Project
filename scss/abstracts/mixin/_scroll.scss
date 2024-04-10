@@ -1,11 +1,10 @@
-@mixin scroll($direction, $size, $trackColor, $radius: null) {
-  @debug $size;
+@mixin scroll($direction, $size, $trackColor, $radius:null) {
   &::-webkit-scrollbar {
-    @if $direction == "right" or $direction == "r" {
+    @if  $direction == 'right' or $direction == 'r' { //세로스크롤
       width: $size;
-    } @else if $direction == "bottom" or $direction == "b" {
+    } @else if $direction == 'bottom' or $direction == 'b' { //가로스크롤
       height: $size;
-    }
+    } 
     background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {

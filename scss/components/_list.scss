@@ -1,18 +1,47 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .category-list {
   @include scroll(b, rem(5), rgba($gray1e, 0.5), 0);
   overflow-x: auto;
   display: flex;
+  gap: rem(16);
   a {
     display: block;
     width: rem(72);
     height: rem(72);
+    border-radius: rem(20);
   }
-  @for $index from 1 through 10 {
+  @for $index from 1 through 5 {
     .item#{$index} {
-      a {
-        @include background("item#{$index}.png", center, $grayd6, contain);
+      a{
+        @include background('item#{$index}.png', center, $graye5, contain);
+        > .--active {
+          background-color: $orange;
+          padding: rem(2) rem(6);
+          color: $white;
+          border-radius: rem(20);
+        }
+      }
+    }
+  }
+}
+.logo-list {
+  @include align(flex, space-between);
+  align-items: center;
+  position: relative;
+}
+
+.reservation{
+  @include align(flex, null, 24);
+  flex-direction: column;
+  > li {
+    + li {
+      &:before {
+        content: '';
+        width: rem(295);
+        height: rem(1);
+        background: $graye5; 
+        @include position(absolute, top, -12px);
       }
     }
   }
