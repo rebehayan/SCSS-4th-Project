@@ -1,0 +1,11 @@
+@use '../function' as *;
+
+@mixin align($type, $form:null, $gap:0) {
+  display: $type;
+  gap: rem($gap);
+  @if  $type =='flex' {
+    justify-content: $form;
+  } @else if $type == 'grid' {
+    grid-template-columns: $form
+  }
+}

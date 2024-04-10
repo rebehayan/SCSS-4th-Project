@@ -1,9 +1,152 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#">
+      <ul class="top-gnb">
+        <li class="top-gnb__left">
+          <span  class="top-gnb__left-text">우리집</span>
+          <img src="./images/ico_arrow_down_white.svg" alt="">
+        </li>
+        <li class="top-gnb__right">
+          <img src="./images/ico_alarm.svg" alt="알람">
+          <img src="./images/ico_basket.svg" alt="장바구니">
+          <div class="basket__count">12</div>
+        </li>
+      </ul>
+    </a>
+    <div>
+      <ul class="gnb-list">
+        <li>
+          <img src="./images/ico_home.svg" alt="">
+          <span>홈</span>
+        </li>
+        <li>
+          <img src="./images/ico_search.svg" alt="">
+          <span>검색</span>
+        </li>
+        <li>
+          <img src="./images/ico_pay.svg" alt="">
+          <span>결제·적립</span>
+        </li>
+        <li>
+          <img src="./images/ico_payment.svg" alt="">
+          <span>주문내역</span>
+        </li>
+        <li>
+          <img src="./images/ico_my.svg" alt="">
+          <span>MY</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="container space3 space4">
+      <a href="" class="alarm">
+        <span class="alarm__color mint">AS25</span>
+        <p class="alarm__text">픽업 대기 중인 상품 바로 보기</p>
+      </a>
+      <div class="box mint text__align space">
+        <div class="text__align-left">
+          <p class="title__type1">내 손안에 우리동네AS</p>
+          <span class="sub-title__type1">적립부터 결제까지, 치킨부터 와인까지</span>
+        </div>
+        <img src="./images/ico_text1.svg" alt="우리동네GS">
+      </div>
+      <div class="box white space">
+        <div class="text__align">
+          <div>
+            <p class="title__type2">우리동네 딜리버리</p>
+            <span class="sub-title__type2">가까운 매장에서 바로 픽업 · 배달</span>
+          </div>
+          <div class="text__badge">
+            <i>쏜살배달</i>
+            <img src="./images/ico_afterimg.svg" alt="">
+          </div>
+        </div>
+        <div class="box__align">
+          <a href="#">
+            <div class="box small__mint item__align">
+              <img src="./images/logo1.svg" alt="GS25">
+              <img src="./images/ico_arrow_riight_black.svg" alt="">
+              <img src="./images/ico_rice.svg" alt="삼각김밥" class="space ico__size">
+            </div>
+          </a>
+          <a href="#">
+            <div class="box small__green item__align">
+              <i class="title__type3">우동마트</i>
+              <img src="./images/ico_arrow_riight_black.svg" alt="">
+              <img src="./images/ico_bucket.svg" alt="장바구니" class="space ico__size">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="box white space">
+        <div class="text__align">
+          <div class="text__align-left">
+            <p class="title__type2">나만의 냉장고</p>
+            <span class="sub-title__type2">보관된 상품을 내가 원할 때 픽업</span>
+          </div>
+          <img src="./images/ico_arrow_up_black.svg" alt="">
+        </div>
+        <ul class="category-list space2">
+          <li class="item1">
+            <a href="#">
+              <span class="a11y-hidden">데미소다</span>
+              <span class="--active">오늘 부터</span>
+            </a>
+          </li>
+          <li class="item2">
+            <a href="#"><span class="a11y-hidden">서울우유</span></a>
+          </li>
+          <li class="item3">
+            <a href="#"><span class="a11y-hidden">꼬깔콘</span></a>
+          </li>
+          <li class="item4">
+            <a href="#"><span class="a11y-hidden">제크</span></a>
+          </li>
+          <li class="item5">
+            <a href="#"><span class="a11y-hidden">ABC초콜릿</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="box white text__align space">
+        <div class="text__align-left">
+          <p class="title__type2">와인25+</p>
+          <span class="sub-title__type2">와인 등 다양한 주류를 주문하고 수령</span>
+        </div>
+        <img src="./images/ico_wine.svg" alt="우리동네GS">
+      </div>
+      <div class="box white space">
+        <p class="title__type4">THE POP+</p>
+        <span class="sub-title__type2">AS리테일만의 특별한 월 정기 멤버십</span>
+      </div>
+      <div class="box white space">
+        <p class="title__type2">사전예약</p>
+        <span class="sub-title__type2">미리 예약 주문하고 할인 받기</span>
+        <div class="space5">
+          <ul class="reservation">
+            <li class="logo-list">
+              <img src="./images/logo_green.svg" alt="">
+              <span class="sub-title__type3">신선상품, 기획 상품 사전 예약</span>
+              <img src="./images/ico_arrow_riight_black.svg" alt="">
+            </li>
+            <li class="logo-list">
+              <img src="./images/logo_mint.svg" alt="">
+              <span class="sub-title__type3">도시락, 행사상품 예약</span>
+              <img src="./images/ico_arrow_riight_black.svg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
 </html>
