@@ -1,0 +1,18 @@
+@mixin position ($x, $xv, $y, $yv){
+    position: absolute;
+    #{$x}:$xv;
+    #{$y}:$yv;
+    @if $xv == 50% and $yv == 50%{
+        transform: translate(-50%, -50%);
+    }@else if $xv == 50% {
+        transform: translateX(-50%);
+    }@else if $yv == 50% {
+        transform: translateY(-50%);
+    }
+}
+
+
+//사용할때
+// div{
+//     @include position(left, 50%, top, 50% );
+// }

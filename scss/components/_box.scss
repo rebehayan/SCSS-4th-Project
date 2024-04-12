@@ -1,39 +1,108 @@
 @use "../abstracts" as *;
 @use "sass:list";
 
-$boxType: (
+$contentType: (
   1: (
-    "class": white,
-    "padding": rem(24),
-    "radius": rem(16),
-    "shadow": 0 rem(4) rem(2) 0 rgba(6, 6, 6, 0.02),
-    "bgColor": white,
+    "class": box15,
+    "padding": rem(0) rem(12),
+    "radius": rem(0),
+    "shadow": null,
+    "bgColor": $transparent,
+    "margin": rem(0),
   ),
-  2: (
-    "class": mint,
-    "padding": rem(24),
-    "radius": rem(16),
+ 2: (
+    "class": box1,
+    "padding": rem(8) rem(8) rem(8) rem(8),
+    "radius": rem(19),
+    "shadow": null,
+    "bgColor": $black06,
+    "margin": rem(8) rem(16),
+  ), 
+  3: (
+    "class": box2,
+    "padding": rem(20),
+    "radius": rem(20),
     "shadow": null,
     "bgColor": $mint,
+    "margin": rem(16) rem(16),
   ),
-  3: (
-    "class": green,
+  4: (
+    "class": box3,
     "padding": rem(24),
-    "radius": rem(16),
-    "shadow": 0 rem(4) rem(2) 0 rgba(6, 6, 6, 0.02),
-    "bgColor": $green,
+    "radius": rem(20),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
   ),
+  5: (
+    "class": box4,
+    "padding": rem(20) rem(0) rem(20) rem(24),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
+  ),
+  6: (
+    "class": box5,
+    "padding": rem(20) rem(0) rem(20) rem(24),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
+  ),
+  7: (
+    "class": box6,
+    "padding": rem(20) rem(0) rem(20) rem(24),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
+  ),
+  8: (
+    "class": box7,
+    "padding": rem(20) rem(0) rem(20) rem(24),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
+  ),
+  9: (
+    "class": box8,
+    "padding": rem(20) rem(0) rem(20) rem(32),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $green,
+    "margin": rem(16) rem(16),
+  ),
+  10: (
+    "class": box9,
+    "padding": rem(0),
+    "radius": rem(0),
+    "shadow": null,
+    "bgColor": $transparent,
+    "margin": rem(16) rem(16),
+  ),
+  11: (
+    "class": box10,
+    "padding": rem(20) rem(0) rem(20) rem(24),
+    "radius": rem(24),
+    "shadow": null,
+    "bgColor": $white,
+    "margin": rem(16) rem(16),
+  ),
+//0 rem(4) rem(2) 0 rgba(6, 6, 6, 0.02)
 );
 
 // @debug list.length($boxType);
 
-.box {
-  @for $index from 1 through list.length($boxType) {
-    &.#{map-get($boxType, $index, class)} {
-      padding: map-get($boxType, $index, padding);
-      border-radius: map-get($boxType, $index, radius);
-      box-shadow: map-get($boxType, $index, shadow);
-      background-color: map-get($boxType, $index, bgColor);
+.content {
+  @for $index from 1 through list.length($contentType) {
+    &.#{map-get($contentType, $index, class)} {
+      padding: map-get($contentType, $index, padding);
+      border-radius: map-get($contentType, $index, radius);
+      box-shadow: map-get($contentType, $index, shadow);
+      background-color: map-get($contentType, $index, bgColor);
+      margin: map-get($contentType, $index, margin);
     }
   }
 }
