@@ -1,0 +1,37 @@
+@use "../abstracts/var" as *;
+        //$class, $fontSize, $fontWeight, $lineHeight, $letterSpacing, $paddingTop, $color
+$textType:  type11 1.1rem bold 1.5 0 0 $black06, 
+            typeW11 1.1rem bold 2 0 0 $white, 
+            typeW12i 1.2rem medium 1.5 0 0 $white, 
+            typeW13 1.3rem medium 1.5 0 0 $white,           
+            typeB13 1.3rem medium 1.5 0 0 $black06,           
+            type15 1.5rem medium 1.5 0 0 $black06,           
+            type15b 1.5rem bold 1.5 0 0 $black06,           
+            typeW15 1.5rem medium 2.6 0 0 $white,
+            typeMI15bl 1.5rem 900 1.5 0 0 $mint,
+            type16i 1.6rem 600 1.5 0 0 $black06,
+            type18 1.8rem medium 1.5 0 0 $black06,
+            type20 2rem bold 1.5 0 0 $black06,
+            type22 2.2rem medium 1.5 0 0 $black06;
+
+
+            @each $class, $fontSize, $fontWeight, $lineHeight, $letterSpacing, $paddingTop, $color in $textType {
+                .text-#{$class} {
+                    font-size: $fontSize;
+                    font-weight: $fontWeight;
+                    line-height: $lineHeight;
+                    letter-spacing: $letterSpacing;
+                    padding-top: $paddingTop;
+                    color: $color;
+                }
+            }
+            // @each $class, $fontSize, $fontWeight, $lineHeight, $letterSpacing, $paddingTop, $color in $textType {
+            //     .ourproduct_title_#{$class} {
+            //         font-size: $fontSize;
+            //         font-weight: $fontWeight;
+            //         line-height: $lineHeight;
+            //         letter-spacing: $letterSpacing;
+            //         padding-top: $paddingTop;
+            //         color: $color;
+            //     }
+            // }
